@@ -1,0 +1,57 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --tealBlue: hsl(180, 100%, 25%);
+    --moonstoneBlue: hsl(199, 39%, 61%);
+    --powderBlue: hsl(187, 52%, 80%);
+    --magicMint: hsl(153, 70%, 80%);
+    --whitesmoke: hsl(0.00, 0.00%, 96.08%);
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--whitesmoke);
+    color: var(--tealBlue);
+    line-height: 1.5;
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    align-items: center;
+}
+
+h1 {
+    padding-left: 8rem;
+}
+
+#value {
+    font-size: 6rem;
+    color: var(--magicMint);
+    font-weight: bold;
+    align-items: center;
+    padding: 10rem;
+}
+
+.btn {
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--tealBlue);
+    font-weight: 600;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid var(--whitesmoke);
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s linear;
+}
